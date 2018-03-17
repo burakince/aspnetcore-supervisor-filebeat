@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore:2.0.5
+FROM microsoft/aspnetcore:2.0.6
 
 MAINTAINER Burak Ince <burak.ince@linux.org.tr>
 
