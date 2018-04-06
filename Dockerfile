@@ -1,6 +1,6 @@
 FROM microsoft/aspnetcore:2.0.6
 
-MAINTAINER Burak Ince <burak.ince@linux.org.tr>
+LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
