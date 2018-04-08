@@ -2,6 +2,8 @@ FROM microsoft/aspnetcore:2.0.6
 
 LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
+ENV FILEBEAT_VERSION=6.0.0
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         tar \
@@ -10,6 +12,6 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /filebeat
-RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.0.0-amd64.deb \
-    && dpkg -i filebeat-6.0.0-amd64.deb \
-    && rm filebeat-6.0.0-amd64.deb
+RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-$FILEBEAT_VERSION-amd64.deb \
+    && dpkg -i filebeat-$FILEBEAT_VERSION-amd64.deb \
+    && rm filebeat-$FILEBEAT_VERSION-amd64.deb
