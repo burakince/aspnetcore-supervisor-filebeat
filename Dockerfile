@@ -2,7 +2,7 @@ FROM microsoft/aspnetcore:2.0.6
 
 LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
-ENV FILEBEAT_VERSION=6.0.0
+ENV FILEBEAT_VERSION=6.2.3
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
