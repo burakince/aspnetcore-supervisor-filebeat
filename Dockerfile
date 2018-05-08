@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore:2.0.7-stretch
+FROM microsoft/aspnetcore:2.0.8-stretch
 
 LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
