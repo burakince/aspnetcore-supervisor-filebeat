@@ -2,7 +2,7 @@ FROM microsoft/aspnetcore:2.0.8-stretch
 
 LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
-ENV FILEBEAT_VERSION=6.2.4
+ENV FILEBEAT_VERSION=6.3.0
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
